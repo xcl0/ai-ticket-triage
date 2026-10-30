@@ -4,8 +4,8 @@ test_cases = [
     {
         "ticket": "Entire website unavailable for all users", 
         "expected_category": "technical",
-         "expected_priority": "critical",
-         "expected_assigned": "technical_support"
+        "expected_priority": "critical",
+        "expected_assigned": "technical_support"
     },
 
     {
@@ -50,5 +50,5 @@ assigned_accuracy = correct_assigned_count/total*100
 
 print(f"category accuracy: {category_accuracy}%")
 print(f"priority accuracy: {priority_accuracy}%")
-
+print(f"assigned accuracy: {assigned_accuracy}%")
 
