@@ -66,4 +66,7 @@ def triage_ticket(ticket):
         else:
             raise RuntimeError(f"Gemini API error: {error.message}")
 
-    return TriageResult.model_validate_json(response.text)
+    result = response.parsed
+    if result is None:
+        raise RuntimeError("Gemini returned no usable result, please try again.")
+    return result
