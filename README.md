@@ -4,7 +4,6 @@ An AI-powered support ticket triage tool. You paste in a customer support ticket
 
 <img width="2292" height="1286" alt="image" src="https://github.com/user-attachments/assets/34a12e57-e132-4f4b-a94e-c1ef98e969f5" />
 
-
 ## What it does
 
 For each ticket, the model returns structured fields:
@@ -87,10 +86,7 @@ For each wrong answer, it prints the ticket id, the expected value, and what the
 
 **Latest result:** 95.8% category accuracy and 91.7% priority accuracy on the 48-case test set.
 
-<img width="992" height="1490" alt="image" src="https://github.com/user-attachments/assets/f92ecdef-65d3-48f3-a6c5-1f945f66ce97" />
-
-
-> **Note:** I used all 48 cases while improving the prompt, so these numbers describe this test set, not new tickets. The test file also has a `tune` / `holdout` field so I can later keep a group of unseen cases and run them once at the end for an honest score.
+> **Note:** I used all 48 cases while improving the prompt, so these numbers describe this test set, not new tickets. The test cases also have a split field (`tune` / `holdout`) field so I can later keep a group of unseen cases and run them once at the end for an honest score.
 
 ## Limitations and next steps
 
